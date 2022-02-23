@@ -1,0 +1,64 @@
+.cont {
+	margin: auto;
+	padding: 5%;
+	border-radius: 15px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 95%;
+	background-image: radial-gradient(
+		circle,
+		#441f91,
+		#7157af,
+		#9e8dcc,
+		#ccc5e6,
+		#ffffff
+	);
+	/* width: 50% !important;
+	background-image: url("../../assets/LogInImg.jpg") !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative; */
+}
+
+.cont h2,
+h4,
+h5 {
+	color: white;
+}
+
+.signUpLink {
+	color: #e5b0ff;
+	text-decoration: none;
+}
+
+.signUpLink:hover {
+	color: #7c7484;
+}
+
+/* .allDiv {
+	width: 50% !important;
+	background-image: url("../../assets/LogInImg.jpg") !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	/* background-image: radial-gradient(
+		circle,
+		#441f91,
+		#7157af,
+		#9e8dcc,
+		#ccc5e6,
+		#ffffff
+	); 
+} */
+
+/* .LogInImg {
+	width: 50% !important;
+	background-image: url("../../assets/LogInImg.jpg") !important;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+} */

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald");
+
+.Carr {
+	height: 100vh;
+	background-image: linear-gradient(
+		to left bottom,
+		#441f91,
+		#7157af,
+		#9e8dcc,
+		#ccc5e6,
+		#ffffff
+	);
+	// url("https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg")
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.carImg {
+	max-height: 326px;
+}
+
+@keyframes showTopText {
+	0% {
+		transform: translate3d(0, 100%, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(0, 50%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes showBottomText {
+	0% {
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+.animated-title {
+	color: #441f91;
+	font-family: Roboto, Arial, sans-serif;
+	height: 90vmin;
+	// position: absolute;
+	width: 90vmin;
+}
+.animated-title > div {
+	height: 50%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.animated-title > div div {
+	font-size: 12vmin;
+	margin-top: -50px;
+	padding: -10px 0;
+	position: absolute;
+}
+
+.animated-title > div.text-top div {
+	animation: showTopText 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	bottom: 0;
+	transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+	color: white;
+}
+.animated-title > div.text-bottom {
+	bottom: 0;
+}
+.animated-title > div.text-bottom div {
+	animation: showBottomText 0.5s;
+	animation-delay: 1.75s;
+	animation-fill-mode: forwards;
+	top: 0;
+	transform: translate(0, -100%);
+}
+
+.wordCarousel {
+	font-family: "Roboto Condensed", cursive;
+	font-size: 36px;
+	font-weight: 100;
+	text-align: left;
+	color: #eee;
+	margin-top: 250px;
+	div {
+		overflow: hidden;
+		position: relative;
+		height: 90px;
+		padding-top: 10px;
+		margin-top: -10px;
+		li {
+			font-family: Serif;
+			color: #eee;
+			font-weight: 700;
+			padding: 0 10px;
+			height: 45px;
+			margin-bottom: 45px;
+			display: block;
+		}
+	}
+}
+
+.flip2 {
+	animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3 {
+	animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4 {
+	animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip2 {
+	0% {
+		margin-top: -180px;
+	}
+	5% {
+		margin-top: -90px;
+	}
+	50% {
+		margin-top: -90px;
+	}
+	55% {
+		margin-top: 0px;
+	}
+	99.99% {
+		margin-top: 0px;
+	}
+	100% {
+		margin-top: -270px;
+	}
+}
+
+@keyframes flip3 {
+	0% {
+		margin-top: -270px;
+	}
+	5% {
+		margin-top: -180px;
+	}
+	33% {
+		margin-top: -180px;
+	}
+	38% {
+		margin-top: -90px;
+	}
+	66% {
+		margin-top: -90px;
+	}
+	71% {
+		margin-top: 0px;
+	}
+	99.99% {
+		margin-top: 0px;
+	}
+	100% {
+		margin-top: -270px;
+	}
+}
+
+@keyframes flip4 {
+	0% {
+		margin-top: -360px;
+	}
+	5% {
+		margin-top: -270px;
+	}
+	25% {
+		margin-top: -270px;
+	}
+	30% {
+		margin-top: -180px;
+	}
+	50% {
+		margin-top: -180px;
+	}
+	55% {
+		margin-top: -90px;
+	}
+	75% {
+		margin-top: -90px;
+	}
+	80% {
+		margin-top: 0px;
+	}
+	99.99% {
+		margin-top: 0px;
+	}
+	100% {
+		margin-top: -270px;
+	}
+}

@@ -1,0 +1,3 @@
+export const GET_IMAGE_LOAD = "GET_IMAGE_LOAD";
+export const GET_IMAGE_SUCCESS = "GET_IMAGE_SUCCESS";
+export const GET_IMAGE_FAIL = "GET_IMAGE_FAIL";

@@ -1,0 +1,76 @@
+.NavLogo {
+	height: 120px;
+}
+
+.cnxBtns {
+	padding: 5px;
+}
+
+.btn_amb {
+	align-items: center;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+	box-sizing: border-box;
+	color: #121212;
+	border-color: #121212;
+	border: 1;
+	cursor: pointer;
+	font-family: Inter, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1;
+	margin: 5px;
+	outline: none;
+	padding: 6px 12px 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+	white-space: nowrap;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.btn_amb:hover {
+	box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.logInBtn {
+	background-color: white !important;
+	border-color: #441f91 !important;
+	color: #441f91 !important;
+}
+
+.logInBtn:hover {
+	background-color: #441f91 !important;
+	color: white !important;
+}
+
+.signUpBtn {
+	background-color: #7157af !important;
+	border-color: #7157af !important;
+	color: white !important;
+}
+
+.signUpBtn:hover {
+	opacity: 1.1;
+	color: white !important;
+}
+
+.navlink {
+	font-size: 18px;
+	color: grey;
+	padding: 4px !important;
+	/* margin: 3px !important; */
+	transform: scale(1);
+	transition: all 0.1s ease 0s;
+}
+
+.navlink:hover {
+	transform: scale(1.15);
+}
+
+.selectedLink {
+	color: black !important;
+}

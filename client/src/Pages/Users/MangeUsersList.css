@@ -1,0 +1,18 @@
+.contactContainer {
+	margin: auto;
+	padding: 5%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-image: linear-gradient(
+		to left bottom,
+		#441f91,
+		#7157af,
+		#9e8dcc,
+		#ccc5e6,
+		#ffffff
+	);
+}

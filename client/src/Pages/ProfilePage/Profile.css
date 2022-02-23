@@ -1,0 +1,12 @@
+.ProfilePic {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	transform: scale(0.9);
+	transition: all 0.9s ease 0s;
+}
+
+.ProfilePic:hover {
+	box-shadow: 0 0 0 14px #f7f5ec;
+	transform: scale(0.7);
+}

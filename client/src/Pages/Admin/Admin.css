@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+.card {
+	font-family: "Merriweather", serif;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	transition: background 0.25s ease;
+	-webkit-transition: background 0.25s ease;
+	-moz-transition: background 0.25s ease;
+	-ms-transition: background 0.25s ease;
+	border: none;
+	color: white !important;
+	border-radius: 12px !important;
+}
+
+.card:hover {
+	transition: all 0.2s ease-out;
+	box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+	border: 1px solid #cccccc;
+}
+
+.card:hover::before {
+	transform: scale(2.15);
+}
+
+.iconDiv {
+	padding: 25px;
+}
+
+.card.tale-bg {
+	background: #dae7ff;
+}
+
+.card.transparent {
+	background: transparent;
+}
+
+.card .card-body {
+	padding: 1.25rem 1.25rem;
+	text-align: left;
+}
+
+.card .card-body + .card-body {
+	padding-top: 1rem;
+}
+
+.card .card-title {
+	color: #010101;
+	margin-bottom: 1.2rem;
+	text-transform: capitalize;
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.card .card-subtitle {
+	font-weight: 400;
+	margin-top: 0.625rem;
+	margin-bottom: 0.625rem;
+}
+
+.card .card-description {
+	margin-bottom: 0.875rem;
+	font-weight: 400;
+	color: #76838f;
+}
+
+.card.card-outline-success {
+	border: 1px solid #57b657;
+}
+
+.card.card-outline-primary {
+	border: 1px solid #4b49ac;
+}
+
+.card.card-outline-warning {
+	border: 1px solid #ffc100;
+}
+
+.card.card-outline-danger {
+	border: 1px solid #ff4747;
+}
+
+.card.card-rounded {
+	border-radius: 5px;
+}
+
+.card.card-faded {
+	background: #b5b0b2;
+	border-color: #b5b0b2;
+}
+
+.card.card-circle-progress {
+	color: #ffffff;
+	text-align: center;
+}
+
+.card.card-img-holder {
+	position: relative;
+}
+
+.card.card-img-holder .card-img-absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+
+.card.card-weather .weather-daily .weather-day {
+	opacity: 0.5;
+	font-weight: 900;
+}
+
+.card.card-weather .weather-daily i {
+	font-size: 20px;
+}
+
+.card.card-weather .weather-daily .weather-temp {
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	opacity: 0.5;
+	font-size: 0.75rem;
+}
+
+.card.card-tale {
+	background: #7da0fa;
+	color: #ffffff;
+}
+
+.card.card-tale:hover {
+	background: #96b2fb;
+}
+
+.card.card-dark-blue {
+	background: #4747a1;
+	color: #ffffff;
+}
+
+.card.card-dark-blue:hover {
+	background: #5050b2;
+}
+
+.card.card-light-blue {
+	background: #7978e9;
+	color: #ffffff;
+}
+
+.card.card-light-blue:hover {
+	background: #8f8eed;
+}
+
+.card.card-light-danger {
+	background: #f3797e;
+	color: #ffffff;
+}
+
+.card.card-light-danger:hover {
+	background: #f59095;
+}
+
+.card-inverse-primary {
+	background: rgba(75, 73, 172, 0.2);
+	border: 1px solid #45439e;
+	color: #393783;
+}
+
+.card-inverse-secondary {
+	background: rgba(163, 164, 165, 0.2);
+	border: 1px solid #969798;
+	color: #7c7d7d;
+}
+
+.card-inverse-success {
+	background: rgba(87, 182, 87, 0.2);
+	border: 1px solid #50a750;
+	color: #428a42;
+}
+
+.card-inverse-info {
+	background: rgba(36, 138, 253, 0.2);
+	border: 1px solid #217fe9;
+	color: #1b69c0;
+}
+
+.card-inverse-warning {
+	background: rgba(255, 193, 0, 0.2);
+	border: 1px solid #ebb200;
+	color: #c29300;
+}
+
+.card-inverse-danger {
+	background: rgba(255, 71, 71, 0.2);
+	border: 1px solid #eb4141;
+	color: #c23636;
+}
+
+.card-inverse-light {
+	background: rgba(248, 249, 250, 0.2);
+	border: 1px solid #e4e5e6;
+	color: #bcbdbe;
+}
+
+.card-inverse-dark {
+	background: rgba(40, 47, 58, 0.2);
+	border: 1px solid #252b35;
+	color: #1e242c;
+}

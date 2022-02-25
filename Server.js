@@ -1,15 +1,14 @@
 const express = require("express");
 const path = require("path");
-
-app = express();
-
-require("dotenv").config();
-
 const connectDB = require("./config/ConnectDB");
 const userRouter = require("./routes/users");
 const hotelRouter = require("./routes/hotels");
 const hostelRouter = require("./routes/hostels");
 const restaurantRouter = require("./routes/restaurants");
+
+app = express();
+
+require("dotenv").config();
 
 connectDB();
 

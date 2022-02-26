@@ -1,6 +1,6 @@
 const express = require("express");
-const path = require("path");
 const connectDB = require("./config/ConnectDB");
+const path = require("path");
 const userRouter = require("./routes/users");
 const hotelRouter = require("./routes/hotels");
 const hostelRouter = require("./routes/hostels");
@@ -25,23 +25,6 @@ if (process.env.NODE_ENV === "production") {
 		res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 	});
 }
-
-// if (process.env.NODE_ENV === "production") {
-// 	app.use(express.static(path.resolve(process.cwd(), "client/build")));
-// 	app.get("*", (req, res) => {
-// 		res.sendFile(path.resolve(process.cwd(), "client/build/index.html"));
-// 	});
-// }
-
-// if (process.env.NODE_ENV === "production") {
-// 	app.use(express.static(path.join(__dirname, "client", "build")));
-
-// 	app.get("*", (req, res) => {
-// 		const index = path.join(__dirname, "client", "build", "index.html");
-// 		// res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-// 		res.sendFile(index);
-// 	});
-// }
 
 const port = process.env.PORT || 5000;
 

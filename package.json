@@ -8,8 +8,7 @@
     "backend": "npx nodemon server",
     "frontend": "cd client && npm start",
     "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false"
-
+"heroku-postbuild": "cd client && npm install --only = dev && npm install && npm run build "
   },
   "keywords": [],
   "author": "Marwen Touati",

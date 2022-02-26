@@ -19,10 +19,17 @@ app.use("/api/hotel", hotelRouter);
 app.use("/api/hostel", hostelRouter);
 app.use("/api/restaurant", restaurantRouter);
 
+// if (process.env.NODE_ENV === "production") {
+// 	app.use(express.static("client/build"));
+// 	app.get("*", (req, res) => {
+// 		res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+// 	});
+// }
+
 if (process.env.NODE_ENV === "production") {
-	app.use(express.static("client/build"));
+	app.use(express.static(path.resolve(process.cwd(), "client/build")));
 	app.get("*", (req, res) => {
-		res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+		res.sendFile(path.resolve(process.cwd(), "client/build/index.html"));
 	});
 }
 
